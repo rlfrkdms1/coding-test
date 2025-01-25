@@ -34,7 +34,7 @@ public class B19637 {
                     break;
                 }
                 if(power > powerList[mid]) right = mid - 1;
-                else if(power <= powerList[mid+1]) left = mid + 1;
+                else left = mid + 1;
             }
         }
 
