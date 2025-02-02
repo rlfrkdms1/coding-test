@@ -7,9 +7,9 @@ class Main {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
-        int testCases = Integer.parseInt(reader.readLine());
-
         StringJoiner joiner = new StringJoiner(System.lineSeparator());
+        
+        int testCases = Integer.parseInt(reader.readLine());
 
         for(int i = 0; i < testCases; i++) {
             int size = Integer.parseInt(reader.readLine());
