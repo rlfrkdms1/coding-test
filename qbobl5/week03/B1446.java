@@ -24,10 +24,8 @@ public class B1446 {
         dp[0] = 0;
 
         for(int i=1; i<=D; i++) {
-            for(int j=0; j<N; j++) {
-                if(way[j][1] == i) dp[i] = Math.min(dp[i], Math.min(dp[i - 1] + 1, dp[way[j][0]] + way[j][2]));
-                else dp[i] = Math.min(dp[i], dp[i - 1] + 1);
-            }
+            dp[i] = Math.min(dp[i], dp[i - 1] + 1);
+            for(int j=0; j<N; j++) if(way[j][1] == i) dp[i] = Math.min(dp[i], Math.min(dp[i - 1] + 1, dp[way[j][0]] + way[j][2]));
         }
 
         System.out.println(dp[D]);
