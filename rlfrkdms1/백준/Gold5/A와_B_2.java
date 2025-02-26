@@ -30,7 +30,6 @@ class Main {
             }
             
             if(change.charAt(0) == 'B') queue.offer(change.deleteCharAt(0).reverse().toString());
-            
         }
         System.out.println(answer);
     }
