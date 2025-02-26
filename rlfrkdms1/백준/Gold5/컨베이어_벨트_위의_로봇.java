@@ -6,12 +6,11 @@ class Main {
     
     static Deque<int[]> top = new ArrayDeque<>();
     static Deque<int[]> bottom = new ArrayDeque<>();
-    static int n;
     
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
-        n = Integer.parseInt(tokenizer.nextToken());
+        int n = Integer.parseInt(tokenizer.nextToken());
         int k = Integer.parseInt(tokenizer.nextToken());
 
         tokenizer = new StringTokenizer(reader.readLine());
