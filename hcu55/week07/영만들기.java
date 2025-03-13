@@ -1,8 +1,10 @@
+package hcu55.week07;
+
 import java.io.*;
 import java.util.*;
 
 // 0 만들기(dfs), 골드 V
-public class Main {
+public class 영만들기 {
     static int N;
     static List<String> answer;
 
