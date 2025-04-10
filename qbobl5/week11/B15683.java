@@ -34,7 +34,7 @@ public class B15683 {
 	}
     
 	static char map[][];
-	static ArrayList<CCTV> list = new ArrayList<>();
+	static List<CCTV> list = new ArrayList<>();
 	static int N;
     static int M;
     static int size;
